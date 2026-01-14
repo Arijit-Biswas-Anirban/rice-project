@@ -11,14 +11,18 @@
 
 ## Day 1
 - [x] Folder structure created
-- [ ] Raw dataset placed in data/raw (original only)
-- [ ] Verified class folders = 38
-- [ ] Counted images per class (should be 500 each)
+- [x] Raw dataset placed in data/raw (original only)
+- [x] Verified class folders = 38
+- [x] Verified images/class = 500 (total 19000)
+- [x] Created stratified splits (60/20/20) with fixed seed = 20260115
+- [x] Verified splits: per-class counts (300/100/100), no overlap, existence check PASS
+
 
 ### Environment
-- OS:
-- Python:
-- Framework: TensorFlow/Keras
-- GPU:
-- CUDA/cuDNN (optional):
+- OS: Ubuntu 24.04
+- Python: 3.10.13
+- Framework: TensorFlow 2.20.0 (Keras)
+- GPU: NVIDIA GeForce RTX 3050
+- Environment: conda env "tf310" (miniforge)
+- CUDA/cuDNN: ~1400+
 
