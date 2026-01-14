@@ -26,6 +26,16 @@
 - [x] Verified batch shapes and label correctness
 - [x] Visual sanity check passed (images look correct after unnormalization)
 
+## Day 3
+- [x] Trained ResNet50 baseline with frozen backbone
+- [x] Achieved validation accuracy ≈ 0.49
+- [x] Test accuracy = 0.4795
+- [x] Macro-F1 = 0.4616 (38-class evaluation)
+- [x] Generated normalized confusion matrix
+- [x] Identified high-performing and low-performing classes
+- [x] Observed structured confusion among visually similar rice varieties
+
+
 
 
 ### Environment
