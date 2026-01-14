@@ -1,0 +1,44 @@
+############################################
+# DATA (NEVER COMMIT RAW OR AUGMENTED DATA)
+############################################
+data/raw/
+data/processed/
+data/augmented/
+
+# Ignore all images anywhere under data
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.bmp
+data/**/*.tif
+data/**/*.tiff
+
+############################################
+# ALLOW SPLITS (IMPORTANT FOR REPRODUCIBILITY)
+############################################
+!data/splits/
+!data/splits/*.csv
+!data/splits/*.json
+
+############################################
+# EXPERIMENT OUTPUTS (DO NOT COMMIT)
+############################################
+experiments/**/checkpoints/
+experiments/**/saved_models/
+experiments/**/logs/
+results/logs/
+results/figures/tmp/
+
+############################################
+# PYTHON / JUPYTER
+############################################
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+############################################
+# OS / EDITOR
+############################################
+.DS_Store
+Thumbs.db
+.vscode/settings.json
