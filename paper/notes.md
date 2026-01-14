@@ -17,6 +17,16 @@
 - [x] Created stratified splits (60/20/20) with fixed seed = 20260115
 - [x] Verified splits: per-class counts (300/100/100), no overlap, existence check PASS
 
+## Day 2
+- [x] Loaded train/val/test CSV splits inside TensorFlow
+- [x] Created deterministic label-to-id mapping (38 classes)
+- [x] Built tf.data pipeline from CSV filepaths
+- [x] Image decoding, resizing (224x224), ImageNet normalization applied
+- [x] Enabled GPU acceleration (RTX 3050 confirmed)
+- [x] Verified batch shapes and label correctness
+- [x] Visual sanity check passed (images look correct after unnormalization)
+
+
 
 ### Environment
 - OS: Ubuntu 24.04
