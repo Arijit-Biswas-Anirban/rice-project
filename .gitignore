@@ -30,6 +30,35 @@ results/logs/
 results/figures/tmp/
 
 ############################################
+# OUTPUTS / XAI (DO NOT COMMIT IMAGES)
+############################################
+# Ignore all generated figures/images in outputs
+outputs/**/*.png
+outputs/**/*.jpg
+outputs/**/*.jpeg
+outputs/**/*.webp
+outputs/**/*.svg
+
+# But KEEP reproducible artifacts like CSV/TXT/JSON
+!outputs/**/*.csv
+!outputs/**/*.txt
+!outputs/**/*.json
+!outputs/**/*.md
+
+# (Optional) If you never want to commit any outputs except a few, you can instead ignore all:
+# outputs/
+# and then selectively unignore specific files/folders
+
+############################################
+# MODEL ARTIFACTS (DO NOT COMMIT)
+############################################
+**/*.keras
+**/*.h5
+**/*.ckpt
+**/*.weights.h5
+
+
+############################################
 # PYTHON / JUPYTER
 ############################################
 __pycache__/

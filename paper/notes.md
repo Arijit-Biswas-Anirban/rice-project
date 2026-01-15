@@ -5,7 +5,7 @@
 - Split plan: 60/20/20 stratified
 - Augmented dataset: NOT used (avoid leakage)
 - Model baseline: ResNet50 (ImageNet pretrained)
-- Input: 224×224 RGB, ImageNet normalization
+- Input: - Input: 224×224 RGB, ImageNet mean/std normalization (mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])
 - Metrics: accuracy, macro-F1, per-class accuracy, confusion matrix
 - Random seed policy: fixed seeds for split + training
 
@@ -35,6 +35,28 @@
 - [x] Identified high-performing and low-performing classes
 - [x] Observed structured confusion among visually similar rice varieties
 
+## Day 4
+- [x] Loaded baseline model from `experiments/exp001_baseline_resnet50/best_model.keras`
+- [x] Reproduced Day 3 performance on test set (accuracy ≈ 0.4795)
+- [x] Critical fix: confirmed training-time preprocessing = ImageNet mean/std normalization  
+      (mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225]); `preprocess_input` caused mismatch
+- [x] Built `pred_df` with: y_true, y_pred, true_name, pred_name, p_true, p_pred, is_correct
+- [x] Visualized:
+  - correct vs wrong counts
+  - confidence distribution (p_pred) for correct vs wrong
+- [x] Generated labeled normalized confusion matrix (row-normalized) with value overlay
+- [x] Extracted top confusion pairs (true → pred) by row-normalized error rate
+- [x] Created Grad-CAM case list: `outputs/xai/gradcam/selected_cases.csv`
+  - total = 152 (wrong_pair=80, correct_ref=72)
+- [x] Implemented Grad-CAM using manual forward path (backbone + head) to avoid nested-model gradient issues
+- [x] Saved Grad-CAM panels:
+  - `outputs/xai/gradcam/panels/` (152 images; 3-panel: original, pred-CAM, true-CAM)
+- [x] Computed Grad-CAM quantitative summaries:
+  - entropy saved: `outputs/xai/gradcam/gradcam_metrics.csv`
+  - peakiness (top-5% mass) saved: `outputs/xai/gradcam/gradcam_peakiness.csv`
+- [x] Identified extreme wrong cases by high true-CAM peakiness:
+  - `outputs/xai/gradcam/extreme_wrong_cases.csv`
+  - example panels saved: `outputs/xai/gradcam/extreme_panels/`
 
 
 

@@ -1,0 +1,13 @@
+filepath,true_name,pred_name,is_correct,selection_type,p_true,p_pred,top5_mass_predcam,top5_mass_truecam
+data/raw/Binadhan24/binadhan24 (382).jpg,Binadhan24,Binadhan10,False,wrong_pair,0.10694471,0.46866712,0.2868011078204747,0.6489974778428185
+data/raw/Binadhan24/binadhan24 (262).jpg,Binadhan24,Binadhan10,False,wrong_pair,0.060522296,0.4912532,0.2346018244238406,0.6203813557796909
+data/raw/Binadhan17/binadhan17 (387).jpg,Binadhan17,Binadhan12,False,wrong_pair,0.12856087,0.43358088,0.3153505909790784,0.5162019139244566
+data/raw/BD87/bd87 (362).jpg,BD87,BD57,False,wrong_pair,0.052394148,0.8598374,0.2303579069794712,0.5114113292177915
+data/raw/BD57/bd57 (211).jpg,BD57,BD87,False,wrong_pair,0.29327658,0.5205428,0.3573425348101799,0.4759286455764807
+data/raw/Binadhan17/binadhan17 (96).jpg,Binadhan17,Binadhan12,False,wrong_pair,0.1882001,0.43945822,0.2711218657732099,0.46782604213569
+data/raw/Binadhan17/binadhan17 (348).jpg,Binadhan17,Binadhan12,False,wrong_pair,0.19274917,0.77239865,0.2417215922354616,0.4626663558273737
+data/raw/BD87/bd87 (57).jpg,BD87,BD57,False,wrong_pair,0.0878372,0.55445635,0.2829594456075562,0.4515010524962702
+data/raw/Binadhan17/binadhan17 (265).jpg,Binadhan17,Binadhan12,False,wrong_pair,0.12851126,0.3875933,0.2222139964812423,0.4432222544861564
+data/raw/Binadhan24/binadhan24 (13).jpg,Binadhan24,Binadhan10,False,wrong_pair,0.1658534,0.49432755,0.228488306733497,0.4350049766190262
+data/raw/Binadhan14/binadhan14 (142).jpg,Binadhan14,Binadhan16,False,wrong_pair,0.19171412,0.42720106,0.3021977171429438,0.4340371280246868
+data/raw/BD52/bd52 (91).jpg,BD52,BD33,False,wrong_pair,0.12474968,0.4491762,0.2160015313300388,0.4159469519728929
